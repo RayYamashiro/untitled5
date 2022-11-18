@@ -79,11 +79,12 @@ public class UnicodeAnalysis {
 
     public void CalcTheFrequency() throws IOException {
 
-        setSize((int) new File(getPathOfTheFile()).length());
+        //setSize((int) new File(getPathOfTheFile()).length());
         BufferedReader reader = new BufferedReader(new FileReader(getPathOfTheFile()));
         int ch = reader.read();
 
         while (ch != -1) {
+            //size++;
             // ListIterator<Symbol> listIt = list.listIterator();
             Symbol symbol = new Symbol(ch, 1);
             if (list.size() == 0)

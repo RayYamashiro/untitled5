@@ -11,7 +11,7 @@ public class ThirdTask {
     private String [] fileName = {"utf8.txt", "iso.txt" ,"windows.txt",  "utf16.txt","koi8r.txt"};
     private HashMap<Integer, Integer> map = new HashMap<>();
     int size;
-    public void ThirdTask()
+    public  ThirdTask()
     {
         for(int i =0; i < 256; i ++)
             map.put(i, 0);
